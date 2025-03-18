@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo "Compiling C++ program..."
-                    sh 'g++ -o hello_exec hello.cpp'
+                    sh 'g++ -o hello_exec ./main/hello.cpp'
                 }
             }
         }
